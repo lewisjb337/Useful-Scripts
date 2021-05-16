@@ -1,0 +1,19 @@
+/*The following is an animation that can be added to most elements to pop them out and then back to their original starting position*/
+
+/*Add the animation CSS to the element of your choice*/
+.example-element{
+	animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+
+/*You will also require the keyframes to animate the popout size, these values cn be changed to customize your element*/
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}

@@ -1,0 +1,79 @@
+/*The following is a CSS animation applied to buttons that, when hovered over, created a sliding effect*/
+
+/*This code snippet establishes the dimensions of the button element and the decoration elements*/
+.button {
+    /*You can change the primary color to anything you would like*/
+    /*Decoration*/
+    background: #b621fe;
+    border: none;
+
+    /*Positioning*/
+    z-index: 1;
+  }
+  .button:after {
+    /*Element content*/
+    content: "";
+
+    /*Dimensions*/
+    width: 0;
+    height: 100%;
+
+    /*Positioning*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    /*You can change the secondary color to anything you would like*/
+    /*Decoration*/
+    background-color: #663dff;
+    border-radius: 5px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .button:hover {
+    /*Color*/
+    color: #fff;
+  }
+  .button:hover:after {
+    /*Positioning*/
+    left: 0;
+
+    /*Dimensions*/
+    width: 100%;
+  }
+  .button:active {
+    /*Positioning*/
+    top: 2px;
+  }
+
+  /*Button element settings*/
+  .custom-btn {
+    /*Dimensions*/
+    width: 130px;
+    height: 40px;
+
+    border-radius: 5px;
+    padding: 10px 25px;
+
+    /*Colors*/
+    color: #fff;
+
+    /*Font*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+
+    /*Decoration*/
+    background: transparent;
+    cursor: pointer;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+
+    /*Positioning*/
+    position: relative;
+    display: inline-block;
+  }

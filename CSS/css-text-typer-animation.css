@@ -1,0 +1,34 @@
+/*THe following CSS automatically types the text attatched to the given class as an animation*/
+
+/*Add the typing animation to an element such as the example below*/
+.example-element{
+    /*Dimensions*/
+  width: 22ch;
+
+  /*Animation*/
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+
+  /*Positioning*/
+  white-space: nowrap;
+  overflow: hidden;
+
+  /*Decoration*/
+  border-right: 3px solid;
+
+  /*Font*/
+  font-family: monospace;
+  font-size: 2em;
+}
+
+/*Keyframes to handle animations*/
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+@keyframes blink {
+50% {
+    border-color: transparent
+}
+}

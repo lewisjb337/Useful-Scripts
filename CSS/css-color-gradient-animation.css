@@ -1,0 +1,14 @@
+/*The following is an example of how to use the CSS Color Changing Animation Effect*/
+
+/*Add the animatio to the element of your choice, here I have used the hover over the 'a' element*/
+a:hover{
+    animation: color-change 7s infinite;
+}
+
+/*You will also need the keyframes element to move between the colors of your choice*/
+/*You can add more than three elements by changing the percentage value and adding a new color variant*/
+@keyframes color-change {
+    0% { color: #ffc996; }
+    50% { color: #ff8474; }
+    100% { color: #9f5f80; }
+  }
